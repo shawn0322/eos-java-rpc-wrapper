@@ -20,8 +20,63 @@ public class ChainInfo {
 
     private String participationRate;
 
+    private String lastIrreversibleBlockId;
+
+    private String virtualBlockCpuLimit;
+
+    private String virtualBlockNetLimit;
+
+    private String blockCpuLimit;
+
+    private String blockNetLimit;
+
     public ChainInfo(){
 
+    }
+
+    public String getBlockNetLimit() {
+        return blockNetLimit;
+    }
+
+    @JsonProperty("block_net_limit")
+    public void setBlockNetLimit(String blockNetLimit) {
+        this.blockNetLimit = blockNetLimit;
+    }
+
+    public String getBlockCpuLimit() {
+        return blockCpuLimit;
+    }
+
+    @JsonProperty("block_cpu_limit")
+    public void setBlockCpuLimit(String blockCpuLimit) {
+        this.blockCpuLimit = blockCpuLimit;
+    }
+
+    public String getVirtualBlockNetLimit() {
+        return virtualBlockNetLimit;
+    }
+
+    @JsonProperty("virtual_block_net_limit")
+    public void setVirtualBlockNetLimit(String virtualBlockNetLimit) {
+        this.virtualBlockNetLimit = virtualBlockNetLimit;
+    }
+
+    public String getVirtualBlockCpuLimit() {
+        return virtualBlockCpuLimit;
+    }
+
+    @JsonProperty("virtual_block_cpu_limit")
+    public void setVirtualBlockCpuLimit(String virtualBlockCpuLimit) {
+        this.virtualBlockCpuLimit = virtualBlockCpuLimit;
+    }
+
+    public String getLastIrreversibleBlockId() {
+        return lastIrreversibleBlockId;
+    }
+
+    @JsonProperty("last_irreversible_block_id")
+    public void setLastIrreversibleBlockId(String lastIrreversibleBlockId) {
+        this.lastIrreversibleBlockId = lastIrreversibleBlockId;
     }
 
     public String getServerVersion() {
